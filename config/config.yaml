@@ -1,0 +1,41 @@
+browser:
+  headless: false
+  width: 1920
+  height: 1080
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+linkedin:
+  base_url: "https://www.linkedin.com"
+  login_url: "https://www.linkedin.com/login"
+  search_url: "https://www.linkedin.com/search/results/people/"
+
+limits:
+  max_connections_per_day: 20
+  max_messages_per_day: 30
+  connection_note_max_length: 300
+
+delays:
+  min_action_delay_ms: 2000
+  max_action_delay_ms: 5000
+  min_typing_delay_ms: 50
+  max_typing_delay_ms: 200
+  min_scroll_delay_ms: 500
+  max_scroll_delay_ms: 2000
+
+stealth:
+  business_hours_only: true
+  work_start_hour: 9
+  work_end_hour: 18
+  enable_random_scrolling: true
+  enable_mouse_hovering: true
+  enable_typing_errors: true
+  typo_probability: 0.05
+
+storage:
+  db_path: "./data/automation.db"
+  session_cookie_path: "./data/session.json"
+
+logging:
+  level: "info"
+  file: "./logs/automation.log"
+  console: true
